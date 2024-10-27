@@ -2,6 +2,7 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import realtime from "@/assets/images/Real-time.png"
+import gemini from "@/assets/images/gemini.png"
 import Image from "next/image";
 import CheckCircle from '@/assets/icons/check-circle.svg';
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg';
@@ -20,6 +21,18 @@ const portfolioProjects = [
     ],
     link: "https://github.com/beast4sourav/Portfolio/tree/master/src/assets/images",
     image: realtime,
+  },
+  {
+    company: "Google Gemini",
+    year: "2024",
+    title: "Frontend of Google Gemini",
+    results: [
+      { title: "This is the Ai tool that is introduced by Google" },
+      { title: "This Project cover some API calling concept" },
+      { title: "Click the link to see the Project" },
+    ],
+    link: "https://gemini-sk.vercel.app/",
+    image:gemini,
   },
   {
     company: "Innovative Co",
@@ -52,8 +65,8 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16 lg:py-24">
       <div className="container">
-        <SectionHeader 
-          eyebrow="Real-world Results" 
+        <SectionHeader
+          eyebrow="Real-world Results"
           title="Featured Projects"
           description="See how I transformed concepts into engaging digital experiences."
         />
@@ -74,24 +87,24 @@ export const ProjectsSection = () => {
                     <span>{project.year}</span>
                   </div>
                   <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">{project.title}</h3>
-                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
+                  <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
                       <li key={result.title} className="flex gap-2 text-sm md:text-base text-white/50">
-                        <CheckCircle className="size-5 md:size-6"/>
+                        <CheckCircle className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center md:w-auto px-6 justify-center gap-2 mt-8">
+                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center md:w-auto px-6 justify-center gap-2 mt-8 active:scale-95">
                       <span>Visit Live Site</span>
-                      <ArrowUpRight className="size-4"/>
+                      <ArrowUpRight className="size-4" />
                     </button>
                   </a>
                 </div>
                 <div className="relative">
-                  <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"/>
+                  <Image src={project.image} alt={project.title} className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
                 </div>
               </div>
             </Card>

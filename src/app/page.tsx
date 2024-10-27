@@ -6,18 +6,20 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
+import { Route } from "react-router-dom";
 
 export default function Home() {
   return (
     <div>
-      <Header/>
-      <HeroSection/>
-      <ProjectsSection/>
-      <TapeSection/>
-      <TestimonialsSection/>
-      <AboutSection/>
-      <ContactSection/>
-      <Footer/>
+
+      <Header />
+      <HeroSection />
+      <ProjectsSection />
+      <TapeSection />
+      <TestimonialsSection />
+      <AboutSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }

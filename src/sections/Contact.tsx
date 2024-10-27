@@ -21,9 +21,9 @@ export const ContactSection = () => {
             </div>
             <div>
               <a href="https://www.linkedin.com/in/souravkr9431" target="_blank" rel="noopener noreferrer">
-                <button className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900'>
+                <button className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 active:scale-95'>
                   <span className='font-semibold'>Contact Me</span>
-                  <ArrowUpRightIcon className="size-4"/>
+                  <ArrowUpRightIcon className="size-4" />
                 </button>
               </a>
             </div>
