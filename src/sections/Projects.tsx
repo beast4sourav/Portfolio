@@ -34,6 +34,7 @@ const portfolioProjects = [
     link: "https://gemini-sk.vercel.app/",
     image:gemini,
   },
+  
   {
     company: "Innovative Co",
     year: "2021",
