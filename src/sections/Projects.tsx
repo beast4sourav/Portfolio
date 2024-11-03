@@ -8,6 +8,7 @@ import CheckCircle from '@/assets/icons/check-circle.svg';
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg';
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
+import PaswordGen from "@/assets/images/password.png"
 
 const portfolioProjects = [
   {
@@ -35,6 +36,18 @@ const portfolioProjects = [
     image:gemini,
   },
 
+  {
+    company: "Password Generator",
+    year: "2024",
+    title: "Password Generator",
+    results: [
+      { title: "This is the Random Password Generator " },
+      { title: "This Project cover some Basic Logical Concept" },
+      { title: "Click the link to see the Project" },
+    ],
+    link: "https://password-generator-sk.vercel.app/",
+    image:PaswordGen,
+  },
 ];
 
 export const ProjectsSection = () => {
