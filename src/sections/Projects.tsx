@@ -47,19 +47,6 @@ const portfolioProjects = [
     link: "https://youtu.be/7hi5zwO75yc",
     image: lightSaasLandingPage,
   },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
-
 ];
 
 export const ProjectsSection = () => {
