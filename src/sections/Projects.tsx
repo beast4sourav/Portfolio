@@ -45,7 +45,7 @@ const portfolioProjects = [
       { title: "This project cover new Javascript concept" },
       { title: "Click the like to generator your unique Password" },
     ],
-    link: "password-generator-lyart-nu.vercel.app",
+    link: "https://password-generator-sk.vercel.app/",
     image: password,
   },
 ];
