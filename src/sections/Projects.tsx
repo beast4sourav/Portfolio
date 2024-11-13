@@ -8,6 +8,7 @@ import CheckCircle from '@/assets/icons/check-circle.svg';
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg';
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
+import password from "@/assets/images/password.png"
 
 const portfolioProjects = [
   {
@@ -36,16 +37,16 @@ const portfolioProjects = [
   },
 
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Password Generator",
+    year: "2022",
+    title: "Amazing Password Generator ",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "This is the Password Generator" },
+      { title: "This project cover new Javascript concept" },
+      { title: "Click the like to generator your unique Password" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "password-generator-lyart-nu.vercel.app",
+    image: password,
   },
 ];
 
