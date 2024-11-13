@@ -8,7 +8,6 @@ import CheckCircle from '@/assets/icons/check-circle.svg';
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg';
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import PaswordGen from "@/assets/images/password.png"
 
 const portfolioProjects = [
   {
@@ -33,21 +32,34 @@ const portfolioProjects = [
       { title: "Click the link to see the Project" },
     ],
     link: "https://gemini-sk.vercel.app/",
-    image:gemini,
+    image: gemini,
   },
 
   {
-    company: "Password Generator",
-    year: "2024",
-    title: "Password Generator",
+    company: "Innovative Co",
+    year: "2021",
+    title: "Light Saas Landing Page",
     results: [
-      { title: "This is the Random Password Generator " },
-      { title: "This Project cover some Basic Logical Concept" },
-      { title: "Click the link to see the Project" },
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://password-generator-sk.vercel.app/",
-    image:PaswordGen,
+    link: "https://youtu.be/7hi5zwO75yc",
+    image: lightSaasLandingPage,
   },
+  {
+    company: "Quantum Dynamics",
+    year: "2023",
+    title: "AI Startup Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://youtu.be/Z7I5uSRHMHg",
+    image: aiStartupLandingPage,
+  },
+
 ];
 
 export const ProjectsSection = () => {
@@ -86,9 +98,8 @@ export const ProjectsSection = () => {
                     ))}
                   </ul>
                   <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center md:w-auto px-6 justify-center gap-2 mt-8 active:scale-95">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRight className="size-4" />
+                    <button className="inline-flex h-12 animate-shimmer mt-4 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+                      Visite Live Site
                     </button>
                   </a>
                 </div>

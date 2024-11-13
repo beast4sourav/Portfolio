@@ -7,6 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     screens: {
       sm: "375px",
@@ -26,11 +27,20 @@ const config: Config = {
         serif:'var(--font-serif)',
       },
       animation:{
+        shimmer: "shimmer 2s linear infinite",
         'ping-large': "ping-large 1s ease-in-out infinite",
         'move-left':'move-left 1s linear infinite',
         'move-right':'move-right 1s linear infinite'
       },
       keyframes:{
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
         'ping-large':{
           '75%, 100%':{
             transform:'scale(3)',
