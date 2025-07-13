@@ -4,12 +4,14 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import realtime from "@/assets/images/Real-time.png"
 import gemini from "@/assets/images/gemini.png"
 import chatapp from "@/assets/images/chat-app.png"
+import carRent from"@/assets/images/carRent.png"
 import Image from "next/image";
 import CheckCircle from '@/assets/icons/check-circle.svg';
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg';
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import password from "@/assets/images/password.png"
+
 
 const portfolioProjects = [
   {
@@ -24,6 +26,19 @@ const portfolioProjects = [
     link: "https://fullstack-chat-app-7xt5.onrender.com",
     image: chatapp,
   },
+  {
+    company: "Car-Rental",
+    year: "2025",
+    title: "Car Rental App",
+    results: [
+      { title: "This is the app to reant luxury cars" },
+      { title: "In this you can book luxury cars from legit owner" },
+      { title: "Thanks for visiting " },
+    ],
+    link: "https://car-rent-frontend-sk.vercel.app/",
+    image: carRent,
+  },
+ 
   {
     company: "Map",
     year: "2024",
