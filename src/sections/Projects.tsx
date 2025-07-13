@@ -35,7 +35,7 @@ const portfolioProjects = [
       { title: "In this you can book luxury cars from legit owner" },
       { title: "Thanks for visiting " },
     ],
-    link: "https://car-rent-frontend-sk.vercel.app/",
+    link: "https://car-rent-s-k-94.vercel.app/",
     image: carRent,
   },
  
